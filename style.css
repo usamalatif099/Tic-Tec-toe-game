@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: rgb(32, 107, 32);
+    color: white;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    padding: 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+
+
+.gamecontainer{
+    
+    display: flex;
+    justify-content: center;
+margin-top: 60px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: sans-serif;
+    position: relative;
+}
+
+.line{
+    background-color: rgb(151, 218, 44);
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+.box{
+    border: 2px solid goldenrod;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: brown;
+}
+
+.gameinfo{
+    padding: 0px 34px;
+}
+.imgbox img{
+ width: 0;
+ transition: width is ease-in-out;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    
+    padding: 5px 5px;
+    background-color: purple;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 35px;
+
+
+}
+.info{
+    font-size: 25px;
+}
+
+#imgwin{
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+@media screen and (max-width: 950px) {
+    
+/* code with harry code only   practice
+ .gamecontainer{
+    flex-wrap: wrap;
+ }
+ .gameinfo h1{
+  font-size: 1.5rem;
+ }
+  .gameinfo {
+  margin-top: 34px;
+ }
+ .container{
+
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+ } */
+ 
+/*   2 practice code 2
+    .gamecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gameinfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .gameinfo {
+        margin-top: 34px;
+         text-align: center; 
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+
+    .box {
+        font-size: 12vw;
+    }
+
+    #imgwin {
+        margin: 10px;
+    } */
+
+
+
+    @media screen and (max-width: 800px) {
+
+    .gamecontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gameinfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .gameinfo {
+        margin-top: 34px;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+
+    .box {
+        font-size: 12vw;
+    }
+
+    .line {
+        width: 45vw;
+         height: 3px;
+    }
+
+    #imgwin {
+        margin: 10px;
+    }
+}
+
+}
